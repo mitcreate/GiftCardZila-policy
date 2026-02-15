@@ -9,7 +9,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #0f0f1a;   /* Old Dark Background */
+    background-color: #0f0f1a;
     font-family: Arial, sans-serif;
     color: #ffffff;
 }
@@ -18,7 +18,7 @@ body {
     max-width: 900px;
     margin: 60px auto;
     padding: 40px;
-    background-color: #1a1a2e;   /* Card Background */
+    background-color: #1a1a2e;
     border-radius: 10px;
 }
 
@@ -43,6 +43,7 @@ ul {
     margin-top: 50px;
     font-size: 14px;
     opacity: 0.7;
+    text-align: center;
 }
 </style>
 
@@ -62,10 +63,10 @@ ul {
 <li>Name</li>
 <li>Email address</li>
 <li>Social media username</li>
-<li>Information submitted voluntarily for contest participation</li>
+<li>Information voluntarily submitted for contest participation</li>
 </ul>
 
-<p>This information is used only for participation verification and reward distribution.</p>
+<p>This information is used only for participation verification and reward distribution purposes.</p>
 
 <h2>2. Use of Information</h2>
 <ul>
@@ -91,13 +92,13 @@ ul {
 <p>Gift Card Zila is not affiliated with, sponsored by, or endorsed by PhonePe or any platform mentioned.</p>
 
 <h2>5. Future Website & Cookies</h2>
-<p>If an official website is launched, it may use basic cookies or analytics tools for functionality.</p>
+<p>If an official website is launched, it may use basic cookies or analytics tools for functionality and performance improvement.</p>
 
 <h2>6. User Responsibility</h2>
 <p>Users must provide accurate information. Fake or duplicate entries may lead to disqualification.</p>
 
 <h2>7. Policy Updates</h2>
-<p>Gift Card Zila reserves the right to update this policy at any time.</p>
+<p>Gift Card Zila reserves the right to update this policy at any time without prior notice.</p>
 
 <h1>Terms & Conditions</h1>
 <ul>
@@ -105,7 +106,7 @@ ul {
 <li>One valid entry per user unless specified.</li>
 <li>Winners are selected randomly or based on defined criteria.</li>
 <li>Admin decision is final.</li>
-<li>Fraud or misuse may result in disqualification.</li>
+<li>Fraud, abuse, or misuse may result in disqualification.</li>
 </ul>
 
 <p>We reserve the right to modify or cancel contests if necessary.</p>
@@ -117,10 +118,14 @@ ul {
 <p>All trademarks belong to their respective owners.</p>
 
 <div class="footer">
-© 2026 Gift Card Zila – All Rights Reserved
+© <span id="year"></span> Gift Card Zila – All Rights Reserved
 </div>
 
 </div>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
